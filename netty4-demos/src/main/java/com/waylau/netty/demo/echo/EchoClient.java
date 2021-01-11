@@ -25,13 +25,13 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 public final class EchoClient {
 
 	public static void main(String[] args) throws Exception {
-		if (args.length != 2) {
-			System.err.println("用法: java EchoClient <host name> <port number>");
-			System.exit(1);
-		}
+//		if (args.length != 2) {
+//			System.err.println("用法: java EchoClient <host name> <port number>");
+//			System.exit(1);
+//		}
 
-		String hostName = args[0];
-		int portNumber = Integer.parseInt(args[1]);
+		String hostName = "127.0.0.1";
+		int portNumber = 7;
 
 		// 配置客户端
 		EventLoopGroup group = new NioEventLoopGroup();
